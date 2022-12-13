@@ -1,29 +1,29 @@
-// import { BrowserRouter,Route,Switch, Redirect } from "react-router-dom";
-// import Home from "./page/Home";
-// import Detail from "./page/Detail";
-// import Edit from "./page/Edit";
-// import Tambah from "./page/Tambah";
-// import Analityc from "./page/Analityc";
+import { BrowserRouter,Route,Switch, Redirect } from "react-router-dom";
+import Home from "./page/Home";
+import Detail from "./page/Detail";
+import Edit from "./page/Edit";
+import Tambah from "./page/Tambah";
+import Analityc from "./page/Analityc";
 
-// import Login from './app/pages/Login';
-// import Register from './app/pages/Register';
-// import { useSelector } from 'react-redux';
-// import Logout from './app/components/Logout';
+import Login from './app/pages/Login';
+import Register from './app/pages/Register';
+import { useSelector } from 'react-redux';
+import Logout from './app/components/Logout';
 
 function App() {
 
-  // const auth = useSelector(state => state.auth);
+  const auth = useSelector(state => state.auth);
   
   return (
     <div className="App">
-      {/* <BrowserRouter>
+      <BrowserRouter>
 
         <Switch>
 
         <Route exact path="/">
-             <Login /> */}
+             <Login />
              {/* <Home /> */}
-          {/* </Route>
+          </Route>
         <Route path="/logout">
               <Logout />
         </Route>
@@ -35,11 +35,11 @@ function App() {
         </Route> 
         <Route path="/home">
           { !auth.user ? <Redirect to="/" /> : <Home /> } 
-          </Route>  */}
+          </Route> 
           {/* <Route exact path="/">
              <Home />
           </Route> */}
-          {/* <Route path="/detail/:id">
+          <Route path="/detail/:id">
              <Detail />
           </Route>
           <Route path="/edit/:id">
@@ -51,9 +51,7 @@ function App() {
       
          <Route path="/register" component={Register}/>
         </Switch>
-      </BrowserRouter> */}
-
-      hhhh
+      </BrowserRouter>
     
       
     </div>
