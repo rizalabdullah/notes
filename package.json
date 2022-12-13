@@ -15,7 +15,6 @@
     "cors": "^2.8.5",
     "datatables": "^1.10.18",
     "datatables.net": "^1.13.1",
-    "gh-pages": "^4.0.0",
     "jquery": "^3.6.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.6.0",
@@ -38,7 +37,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build", 
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
@@ -58,5 +57,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
